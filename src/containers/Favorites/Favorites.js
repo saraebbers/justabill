@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Resources = () => {
+const Favorites = () => {
 
   return(
     <div>
       <h3>
-        Add Resources Here
+        Add Favorites Here
       </h3>
     </div>
 
   )
 }
 
-export default Resources;
+export default Favorites;
