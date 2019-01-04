@@ -1,7 +1,56 @@
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .App {
   height: 100vh;
+  background: url(./assets/billOfRights.png)
+    no-repeat
+    top center
 }
 
 h1 {
   text-align: center;
+  font-size: 5.5rem;
+  color: #420C14;
+  padding: 50px;
+  text-shadow: 10px 10px 10px #DBCFB0;
+  font-family: 'Philosopher', sans-serif;
+
+    &:hover {
+    color: #718F94;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-section {
+  background-color: #420C14;
+  font-size: 1.25rem;
+  font-family: 'Open Sans';
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5px;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.nav {
+  background-color: #DBCFB0;
+  margin: 15px 5px;
+  padding: 10px;
+  border: solid #718F94 2px;
+  color: #420C14;
+
+  &.active {
+    background-color: #718F94;
+  }
+
+  &:hover {
+    background-color: #ADA380;
+  }
 }

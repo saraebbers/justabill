@@ -12,19 +12,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Link to='/'>
-          <div className='header-section'>
-            <header>
-              <h1>Just a Bill</h1>
-            </header>
-          </div>
+        <Link to='/' className='header'>
+          <header>
+            <h1>Just a Bill</h1>
+          </header>
         </Link>
         <div className='nav-section'>
-          <nav>
-            <NavLink to='/bills'>Bills</NavLink>
-            <NavLink to='/lessons'>Lesson Plans</NavLink>
-            <NavLink to='/favorites'>Favorites</NavLink>
-          </nav>
+          <NavLink to='/bills' className='nav'>Bills</NavLink>
+          <NavLink to='/lessons' className='nav'>Lesson Plans</NavLink>
+          <NavLink to='/favorites' className='nav'>Favorites</NavLink>
         </div>
         <Switch>
           <Route exact path='/' component={Welcome} />
