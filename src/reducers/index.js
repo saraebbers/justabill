@@ -4,7 +4,7 @@ import { isLoadingReducer } from './isLoadingReducer';
 import { favoritesReducer } from './favoritesReducer';
 import { billsReducer } from './billsReducer';
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   bills: billsReducer,
   errorMessage: errorReducer,
   isLoading: isLoadingReducer,
