@@ -1,13 +1,13 @@
 import * as actions from './index';
 
 describe('actions', () => {
-  it('addBills should take in the payload and return an object with a type of ADD_BILLS', () => {
+  it('getBills should take in the payload and return an object with a type of ADD_BILLS', () => {
     const bills = []
     const expected = {
-      type: 'ADD_BILLS',
+      type: 'GET_BILLS',
       bills
     }
-    const result = actions.addBills(bills)
+    const result = actions.getBills(bills)
     expect(result).toEqual(expected)
   })
 

@@ -1,5 +1,5 @@
-export const addBills = (bills) => ({
-  type: 'ADD_BILLS',
+export const getBills = (bills) => ({
+  type: 'GET_BILLS',
   bills
 })
 

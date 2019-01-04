@@ -1,12 +1,13 @@
 import { errorReducer } from './errorReducer';
 import { isLoadingReducer } from './isLoadingReducer';
 import { favoritesReducer } from './favoritesReducer';
+import { billsReducer } from './billsReducer';
 
 describe('errorReducer', () => {
   it('should return state if the action.type does not match', () => {
     const state = ''
     const result = errorReducer(state, {type: 'SOMETHING_NOT_RELATED', errorMessage: 'This is an Error Message'})
-    expect(result).toEqual('')
+    expect(result).toEqual(state)
   })
 
   it('should return the errorMessage if the action.type matches HAS_ERRORED', () => {
@@ -14,14 +15,13 @@ describe('errorReducer', () => {
     const result = errorReducer(state, {type: 'HAS_ERRORED', errorMessage: 'This is an Error Message'})
     expect(result).toEqual('This is an Error Message')
   })
-
 })
 
 describe('isLoadingReducer', () => {
   it('should return state if the action.type does not match', () => {
     const state = false
     const result = isLoadingReducer(state, {type: 'SOMETHING_NOT_RELATED', isLoading: true})
-    expect(result).toEqual(false)
+    expect(result).toEqual(state)
   })
 
   it('should return the new boolean value of isLoading if the action.type matches HAS_ERRORED', () => {
@@ -52,3 +52,25 @@ describe('favoritesReducer', () => {
       expect(result).toEqual(newFavoriteArray)
     })
 })
+
+describe('billsReducer', () => {
+  it('should return state if the action.type does not match', () => {
+    const state = []
+    const result = billsReducer(state, {type: 'SOMETHING_NOT_RELATED', bills: [{bill_id: 114, title: 'A title for bill 114', other: 'other stuff'}]})
+    expect(result).toEqual(state)
+  })
+
+  it('should return an updated array of bills if the action.type matches GET_BILLS', () => {
+    const state = [{bill_id: 113, title: 'A title for bill 113', other: 'other stuff'}]
+    const result = billsReducer(state, {type: 'GET_BILLS', bills: [{bill_id: 114, title: 'A title for bill 114', other: 'other stuff'}]})
+    const newBillsArray = [...state, [{bill_id: 114, title: 'A title for bill 114', other: 'other stuff'}]]
+    expect(result).toEqual(newBillsArray)
+  })
+
+})
+
+
+
+
+
+
