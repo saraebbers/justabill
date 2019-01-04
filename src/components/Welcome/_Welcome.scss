@@ -1,4 +1,26 @@
 .welcome {
   background-color: #DBCFB0;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  justify-content: space-around;
 }
+
+.welcome-message {
+  border: solid #718F94 5px;
+  background-color: #ADA380;
+  padding: 15px;
+  margin: 20px;
+  width: 90%;
+
+  h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    padding: 10px;
+  }
+
+  p {
+    padding-bottom: 10px
+  }
+}
+
