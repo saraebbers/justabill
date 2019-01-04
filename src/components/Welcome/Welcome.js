@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../index.scss';
 
 const Welcome = () => {
 
   return(
-    <div className='welcome-msg'>
+    <div className='welcome'>
       <h3>
         Welcome Teachers and Life-long Students! 
       </h3>
