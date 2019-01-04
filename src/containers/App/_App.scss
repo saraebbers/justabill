@@ -19,7 +19,7 @@ h1 {
   font-family: 'Philosopher', sans-serif;
 
     &:hover {
-    color: #718F94;
+    color: #151E3F;
   }
 }
 
@@ -33,7 +33,7 @@ a {
   font-size: 1.25rem;
   font-family: 'Open Sans';
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 5px;
   justify-items: center;
   justify-content: space-around;
@@ -52,5 +52,6 @@ a {
 
   &:hover {
     background-color: #ADA380;
+    color: #151E3F;
   }
 }
