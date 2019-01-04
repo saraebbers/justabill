@@ -3,9 +3,9 @@ export const addBills = (bills) => ({
   bills
 })
 
-export const getFavorites = (favId) => ({
+export const getFavorites = (favIds) => ({
   type: 'GET_FAVORITES',
-  favId
+  favIds
 })
 
 export const hasErrored = (errorMessage) => ({
