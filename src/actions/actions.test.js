@@ -11,13 +11,23 @@ describe('actions', () => {
     expect(result).toEqual(expected)
   })
 
-  it('getFavorites should take in the payload and return an object with a type of GET_FAVORITES', () => {
-    const favIds = []
+  it('addFavorite should take in the payload and return an object with a type of ADD_FAVORITE', () => {
+    const bill_id = {}
     const expected = {
-      type: 'GET_FAVORITES',
-      favIds
+      type: 'ADD_FAVORITE',
+      bill_id
     }
-    const result = actions.getFavorites(favIds)
+    const result = actions.addFavorite(bill_id)
+    expect(result).toEqual(expected)
+  })
+
+  it('removeFavorite should take in the payload and return an object with a type of REMOVE_FAVORITE', () => {
+    const bill_id = {}
+    const expected = {
+      type: 'REMOVE_FAVORITE',
+      bill_id
+    }
+    const result = actions.removeFavorite(bill_id)
     expect(result).toEqual(expected)
   })
 

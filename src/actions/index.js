@@ -3,9 +3,14 @@ export const addBills = (bills) => ({
   bills
 })
 
-export const getFavorites = (favIds) => ({
-  type: 'GET_FAVORITES',
-  favIds
+export const addFavorite = (bill_id) => ({
+  type: 'ADD_FAVORITE',
+  bill_id
+})
+
+export const removeFavorite = (bill_id) => ({
+  type: 'REMOVE_FAVORITE',
+  bill_id
 })
 
 export const hasErrored = (errorMessage) => ({
