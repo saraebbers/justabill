@@ -10,7 +10,7 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { rootReducer } from './reducers/index'
 
-const store = createstore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 const app = (
   <Provider store={store}>
@@ -18,6 +18,7 @@ const app = (
       <App />
     </BrowserRouter>)
   </Provider>
+  );
 
 ReactDOM.render(app, document.getElementById('root'));
 
