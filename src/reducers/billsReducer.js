@@ -1,6 +1,6 @@
 export const billsReducer = (state = [], action) => {
   switch (action.type) {
-    case 'GET_BILLS' : 
+    case 'ADD_BILLS' : 
       return [...state, action.bills]
     default:
       return state

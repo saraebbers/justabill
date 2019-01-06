@@ -1,16 +1,74 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import '../../index.scss';
+import PropTypes from 'prop-types';
+import { fetchBillsThunk } from '../../thunks/fetchBillsThunk';
+import Loading from '../Loading/Loading';
+import { Card } from '../Card/Card';
 
-const Bills = () => {
-  const congress = 115;
 
-  return(
-    <div>
-      <h3>
-        `Bills signed into law during the ${congress} congress.`
-      </h3>
-    </div>
+export class Bills extends Component {
+  constructor() {
+    super ()
+    this.state = {
+      congress: 115
+    }
+  }
+  
+  async componentDidMount() {
+    const url = `https://api.propublica.org/congress/v1/${this.state.congress}/both/bills/enacted.json`
+    await this.props.fetchBillsThunk(url)
+  }
 
-  )
+
+  render() {
+    const {billArray, isLoading} = this.props
+    const {congress} = this.state
+
+    const title = `Below are the bills that became law during the ${congress}th Congress.`;
+
+    let information; 
+
+    if(isLoading === true) {
+      information = (<Loading />)
+    } else {
+      billArray.filter(billItem => {
+        if(billItem.congress === congress) {
+          information = billItem.bills.map(bill => {
+            return <Card {...bill} key={bill.id}/>
+          })
+        return information
+        }
+      })
+    }
+
+    return(
+      <div>
+        <h3>
+          {title}
+        </h3>
+        <div>
+          { information }
+        </div>
+      </div>
+    )
+  }
 }
 
-export default Bills;
+export const mapStateToProps = (state) => ({
+  billArray: state.bills,
+  isLoading: state.isLoading,
+  errorMessage: state.errorMessage
+})
+
+export const mapDispatchToProps = (dispatch) => ({
+  fetchBillsThunk: (url) => dispatch(fetchBillsThunk(url)),
+})
+
+Bills.propTypes = {
+  bills: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  errorMessage: PropTypes.string.isRequired,
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Bills);

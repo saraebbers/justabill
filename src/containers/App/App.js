@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Route, Switch, Link, NavLink } from 'react-router-dom';
 import '../../index.scss';
 import Welcome from '../../components/Welcome/Welcome';
-import Bills from '../Bills/Bills';
-import Lessons from '../Lessons/Lessons';
-import Favorites from '../Favorites/Favorites';
 import Display from '../../components/Display/Display';
 
 class App extends Component {

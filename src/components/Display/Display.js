@@ -1,11 +1,12 @@
 import React from 'react';
 import '../../index.scss';
+import Bills from '../../containers/Bills/Bills';
 
-const Display = () => {
-
+const Display = (props) => {
+if (props.type==='Bills')
   return(
     <div className='display'>
-    This is the Display Area
+      <Bills />
     </div>
 
   )
