@@ -1,18 +1,22 @@
 .welcome {
-  background-color: #DBCFB0;
-  display: grid;
-  grid-template-columns: auto;
-  justify-items: center;
+  height: 100vh;
+  background: url(./assets/library.png)
+    top center;
+  background-size: cover;  justify-items: center;
   justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .welcome-message {
+  height: 30vh;
   border: solid #718F94 5px;
   background-color: #ADA380;
   padding: 15px;
-  margin: 20px;
+  margin: 50px;
   width: 90%;
   color: #151E3F;
+
 
   h3 {
     text-align: center;

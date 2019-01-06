@@ -14,7 +14,6 @@ const Welcome = () => {
         </p>
       </section>
     </div>
-
   )
 }
 

@@ -25,7 +25,7 @@ export const Favorites = (props) => {
   }
 
   return(
-      <div>
+      <div className='favorite-container'>
         <h3>
           Below are your selected favorites.
         </h3>
