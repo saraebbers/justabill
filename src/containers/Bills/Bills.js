@@ -34,15 +34,12 @@ export class Bills extends Component {
     } else {
       billArray.filter(billItem => {
         if(billItem.congress === congress) {
-          billItem.bills.map(bill => {
-            // console.log('bills',bill)
-            information = (<Card bill={bill} key={bill.id}/>)
-            return information
+          information = billItem.bills.map(bill => {
+            return <Card {...bill} key={bill.id}/>
           })
         return information
         }
       })
-
     }
 
     return(

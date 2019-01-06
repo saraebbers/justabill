@@ -6,9 +6,9 @@ export class Card extends Component {
 
 
   render() { 
-  const { bill } = this.props
+  const { id, title, sponsor, major_action, major_action_date, summary, bill_uri } = this.props
 
-  console.log(bill)
+  console.log(id)
 
     return(
       <div className='Card'>
