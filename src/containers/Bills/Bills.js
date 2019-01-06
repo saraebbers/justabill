@@ -37,17 +37,17 @@ export class Bills extends Component {
           information = billItem.bills.map(bill => {
             return <Card {...bill} key={bill.id}/>
           })
-        return information
         }
+        return information
       })
     }
 
     return(
       <div>
         <h3>
-          {title}
+          { title }
         </h3>
-        <div>
+        <div className='cardContainer'>
           { information }
         </div>
       </div>
