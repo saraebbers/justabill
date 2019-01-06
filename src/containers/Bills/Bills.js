@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import '../../index.scss';
 import PropTypes from 'prop-types';
 import { addBills } from '../../actions/index';
-import { cleanBills } from '../../utils/cleaner';
 import { fetchBillsThunk } from '../../thunks/fetchBillsThunk';
 
 
@@ -11,9 +10,7 @@ export class Bills extends Component {
   
   async componentDidMount() {
     const url = 'https://api.propublica.org/congress/v1/115/both/bills/enacted.json'
-    const bills = await this.props.fetchBillsThunk(url)
-    console.log(bills)
-    this.props.addBills(bills)
+    await this.props.fetchBillsThunk(url)
   }
 
   render() {

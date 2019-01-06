@@ -1,12 +1,12 @@
-import { isLoading, hasErrored, getBills } from '../actions/index';
-import { apiKey } from '../utils/apiKey'
+import { isLoading, hasErrored, addBills } from '../actions/index';
+import { apiKey } from '../utils/apiKey';
+import { cleanBillsData } from '../utils/cleaner';
+
 
 export const fetchBillsThunk = (url) => {
   return async (dispatch) => {
     try {
-      console.log('pre')
       dispatch(isLoading(true))
-      console.log('post')
       const response = await fetch(url, {
         method: 'GET',
         headers: {
@@ -16,9 +16,10 @@ export const fetchBillsThunk = (url) => {
       if(!response.ok) {
         throw Error(response.statusText)
       }
-      // dispatch(isLoading(false))
-      const billsData = await response.json()
-      return billsData.results
+      dispatch(isLoading(false))
+      const uncleanBillsData = await response.json()
+      let bills = cleanBillsData(uncleanBillsData.results)
+      dispatch(addBills(bills))
     } catch(error) {
       dispatch(hasErrored(error.message))
     }
