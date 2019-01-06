@@ -1,7 +1,7 @@
 .card {
   display: grid;
   background-color: #DBCFB0;
-  margin: 15px 5px;
+  margin: 25px 5px;
   padding: 5px;
   border: solid #718F94 4px;
   color: #420C14;
@@ -25,6 +25,7 @@
     }
 
   h4 {
+    margin-left: 10px;
     text-align: center;
     font-size: 1.25rem;
     color: #151E3F;
@@ -32,10 +33,12 @@
   }
 
   p {
+    margin-left: 10px;
     font-size: 1rem;
   }
 
   h5 {
+    margin-left: 10px;
     font-size: 1rem;
     text-align: center;
   }

@@ -59,7 +59,7 @@ export const mapStateToProps = (state) => ({
   billArray: state.bills,
   isLoading: state.isLoading,
   errorMessage: state.errorMessage,
-  favorites: state.favorite
+  favorites: state.favorites
 })
 
 export const mapDispatchToProps = (dispatch) => ({
