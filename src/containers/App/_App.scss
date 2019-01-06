@@ -1,13 +1,14 @@
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
 .App {
-  height: 100vh;
   background: url(./assets/billOfRights.png)
     no-repeat
-    top center
+    top center;
+  background-size: cover;
 }
 
 h1 {
@@ -54,4 +55,37 @@ a {
     background-color: #ADA380;
     color: #151E3F;
   }
+}
+
+.redirect {
+  height: 100vh;
+  background: url(./assets/library.png)
+    no-repeat
+    top center;
+  background-size: cover;
+    
+    .lnk-redirect {display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    }
+
+    h1 {
+      background-color: #718F94;
+      padding: 5px;
+    }
+
+    button {
+    border: solid #718F94 10px;
+    background-color: #DBCFB0;
+    margin: 15px 5px;
+    padding: 10px;
+    color: #420C14;
+
+    &:hover {
+      background-color: #ADA380;
+      color: #151E3F;
+    }
+    }
+
 }

@@ -1,0 +1,56 @@
+.favorite-pg {
+    height: 100vh;
+  background: url(./assets/congressFloor.jpg)
+    top center;
+  background-size: cover;
+}
+
+.favorite-container {
+
+  justify-content: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 0;
+}
+
+.fav-msg {
+  height: 8vh;
+  border: solid #718F94 5px;
+  background-color: #ADA380;
+  margin-top: 20px;
+  padding: 10px;
+  width: 90%;
+  color: #151E3F;
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+
+.container {
+  align-self: start;
+  height: 8vh;
+  border: solid #718F94 5px;
+  background-color: #ADA380;
+  padding: 10px;
+  color: #151E3F;
+
+  .msg {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-column-gap: 10px;
+  justify-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
