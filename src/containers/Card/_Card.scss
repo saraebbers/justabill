@@ -1,0 +1,41 @@
+.card {
+  background-color: #DBCFB0;
+  margin: 15px 5px;
+  padding: 10px;
+  border: solid #718F94 4px;
+  color: #420C14;
+  overflow: scroll;
+  height: 350px;
+
+  &.active {
+    background-color: #718F94;
+  }
+
+
+  &:hover {
+    background-color: #ADA380;
+    color: #151E3F;
+  }
+
+  &::-webkit-scrollbar, 
+  &::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+
+  h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #151E3F;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+}
