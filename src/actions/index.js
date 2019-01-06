@@ -3,11 +3,6 @@ export const addBills = (bills) => ({
   bills
 })
 
-export const toggleFavorite = (id) => ({
-  type: 'TOGGLE_FAVORITE',
-  id
-})
-
 export const addFavorite = (bill_id) => ({
   type: 'ADD_FAVORITE',
   bill_id
@@ -28,4 +23,3 @@ export const isLoading = (bool) => ({
   isLoading: bool
 })
 
-// add test toggle fav

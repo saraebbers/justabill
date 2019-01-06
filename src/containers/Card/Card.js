@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../index.scss';
-import { addFavorite, toggleFavorite, removeFavorite } from '../../actions';
+import { addFavorite, removeFavorite } from '../../actions';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
@@ -32,20 +32,20 @@ export class Card extends Component {
       button= 
         <button 
           onClick={() => this.handleRemoveFavorite()}
-          className='add-fav'
-          >Remove Favorite</button>
+          className='fav'
+          >Remove bill {id} from Favorites</button>
     } else {
        button= 
         <button 
           onClick={() => this.handleAddFavorite()}
-          className='add-fav'
-          >Save as Favorite</button>
+          className='not-fav'
+          >Save bill {id} as Favorite</button>
     }
 
     return(
       <div className='card'>
         {button}
-        <h4>{id}: {title}</h4>
+        <h4>{title}</h4>
         <h5>Sponsored by: {sponsor} </h5>
         <h5>{major_action}</h5>
         <h5>Date of last Major Action: {major_action_date}</h5>
@@ -62,8 +62,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   addFavorite: (id) => dispatch(addFavorite(id)),
-  removeFavorite: (id) => dispatch(removeFavorite(id)),
-  toggleFavorite: (id) => dispatch(toggleFavorite(id))
+  removeFavorite: (id) => dispatch(removeFavorite(id))
 })
 
 Card.propTypes = {
@@ -76,7 +75,6 @@ Card.propTypes = {
   bill_uri: PropTypes.string.isRequired,
   addFavorite: PropTypes.func.isRequired,
   removeFavorite: PropTypes.func.isRequired,
-  toggleFavorite: PropTypes.func.isRequired
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Card));
