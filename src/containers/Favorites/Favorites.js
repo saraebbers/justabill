@@ -12,7 +12,7 @@ export const Favorites = (props) => {
   let information;
 
   if(!favoritesArray.length) {
-    information = 'There are no selected favorites to display'
+    information = <div className='container'><p className='msg'>There are no selected favorites to display</p></div>
   } else {
     billArray.map(billItem => {
           information = billItem.bills.map(bill => { 
@@ -25,15 +25,19 @@ export const Favorites = (props) => {
   }
 
   return(
-      <div className='favorite-container'>
-        <h3>
-          Below are your selected favorites.
-        </h3>
+    <div className='favorite-pg'>
+      <section className='favorite-container'>
+        <div className='fav-msg'>
+          <h3>
+            Below are your selected favorites.
+          </h3>
+        </div>
         <div className='cardContainer'>
           { information }
         </div>
-      </div>
-    )
+      </section>
+    </div>
+  )
 }
 
 export const mapStateToProps = (state) => ({

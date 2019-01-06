@@ -43,13 +43,17 @@ export class Bills extends Component {
     }
 
     return(
-      <div>
-        <h3>
-          { title }
-        </h3>
-        <div className='cardContainer'>
-          { information }
-        </div>
+      <div className='bills-pg'>
+        <section className='bill-container'>
+          <div className='bill-msg'>
+            <h3>
+              { title }
+            </h3>
+          </div>
+          <div className='cardContainer'>
+            { information }
+          </div>
+        </section>
       </div>
     )
   }
