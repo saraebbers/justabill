@@ -4,7 +4,7 @@ import '../../index.scss';
 import PropTypes from 'prop-types';
 import { fetchBillsThunk } from '../../thunks/fetchBillsThunk';
 import Loading from '../Loading/Loading';
-import { Card } from '../Card/Card';
+import Card from '../Card/Card';
 
 
 export class Bills extends Component {
@@ -22,8 +22,8 @@ export class Bills extends Component {
 
 
   render() {
-    const {billArray, isLoading} = this.props
-    const {congress} = this.state
+    const { billArray, isLoading } = this.props
+    const { congress } = this.state
 
     const title = `Below are the bills that became law during the ${congress}th Congress.`;
 
@@ -33,7 +33,7 @@ export class Bills extends Component {
       information = (<Loading />)
     } else {
       billArray.filter(billItem => {
-        if(billItem.congress === congress) {
+        if(billItem.congress === this.state.congress) {
           information = billItem.bills.map(bill => {
             return <Card {...bill} key={bill.id}/>
           })
@@ -58,7 +58,8 @@ export class Bills extends Component {
 export const mapStateToProps = (state) => ({
   billArray: state.bills,
   isLoading: state.isLoading,
-  errorMessage: state.errorMessage
+  errorMessage: state.errorMessage,
+  favorites: state.favorite
 })
 
 export const mapDispatchToProps = (dispatch) => ({
@@ -66,7 +67,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 Bills.propTypes = {
-  bills: PropTypes.array.isRequired,
+  billArray: PropTypes.array.isRequired,
   isLoading: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string.isRequired,
 }

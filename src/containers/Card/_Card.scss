@@ -1,16 +1,18 @@
 .card {
+  display: grid;
   background-color: #DBCFB0;
   margin: 15px 5px;
-  padding: 10px;
+  padding: 5px;
   border: solid #718F94 4px;
   color: #420C14;
   overflow: scroll;
   height: 350px;
+  align-items: start;
+  justify-items: center;
 
   &.active {
     background-color: #718F94;
   }
-
 
   &:hover {
     background-color: #ADA380;
@@ -36,6 +38,40 @@
   h5 {
     font-size: 1rem;
     text-align: center;
+  }
+
+  button {
+    justify-self: end;
+    padding: 5px;
+    color: #420C14;
+    border-radius: 30px;
+    outline: none;
+    margin: 10px;
+
+    &.fav{
+      background-color: #420C14;
+      border: solid #718F94 2px;
+      color: #DBCFB0;
+    }
+
+    &.not-fav{
+      background-color: #718F94;
+      border: solid #420C14 2px;
+
+    }
+
+    &.active {
+      background-color: #718F94;
+      outline: none;
+
+    }
+
+    &:hover {
+      background-color: #DBCFB0;
+      color: #151E3F;
+      outline: none;
+
+    }
   }
 
 }
