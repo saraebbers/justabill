@@ -2,44 +2,76 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import '../../index.scss';
 import PropTypes from 'prop-types';
-import { addBills } from '../../actions/index';
 import { fetchBillsThunk } from '../../thunks/fetchBillsThunk';
+import Loading from '../Loading/Loading';
+import { Card } from '../Card/Card';
 
 
 export class Bills extends Component {
+  constructor() {
+    super ()
+    this.state = {
+      congress: 115
+    }
+  }
   
   async componentDidMount() {
-    const url = 'https://api.propublica.org/congress/v1/115/both/bills/enacted.json'
+    const url = `https://api.propublica.org/congress/v1/${this.state.congress}/both/bills/enacted.json`
     await this.props.fetchBillsThunk(url)
   }
 
+
   render() {
+    const {billArray, isLoading} = this.props
+    const {congress} = this.state
+
+    const title = `Below are the bills that became law during the ${congress}th Congress.`;
+
+    let information; 
+
+    if(isLoading === true) {
+      information = (<Loading />)
+    } else {
+      billArray.filter(billItem => {
+        if(billItem.congress === congress) {
+          billItem.bills.map(bill => {
+            // console.log('bills',bill)
+            information = (<Card bill={bill} key={bill.id}/>)
+            return information
+          })
+        return information
+        }
+      })
+
+    }
+
     return(
       <div>
         <h3>
-          Bills signed into law
+          {title}
         </h3>
+        <div>
+          { information }
+        </div>
       </div>
     )
   }
 }
 
 export const mapStateToProps = (state) => ({
-  bills: state.bills,
+  billArray: state.bills,
   isLoading: state.isLoading,
   errorMessage: state.errorMessage
 })
 
 export const mapDispatchToProps = (dispatch) => ({
   fetchBillsThunk: (url) => dispatch(fetchBillsThunk(url)),
-  addBills: (url) => dispatch(addBills(url))
 })
 
 Bills.propTypes = {
   bills: PropTypes.array.isRequired,
   isLoading: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string.isRequired,
-  addBills: PropTypes.func.isRequired
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Bills);
