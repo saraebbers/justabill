@@ -1,4 +1,5 @@
 export const cleanBillsData = (uncleanBillsData) => {
+  console.log(uncleanBillsData)
   let congress = uncleanBillsData[0].congress;
   let bills = uncleanBillsData.reduce((acc, data) => {
       let bill = data.bills.map(bill => {
@@ -9,7 +10,7 @@ export const cleanBillsData = (uncleanBillsData) => {
           major_action: bill.latest_major_action,
           major_action_date: bill.latest_major_action_date,
           summary: bill.summary,
-          bill_uri: bill.bill_uri // this is how you get to the whole bill
+          bill_uri: bill.bill_uri 
         })
       })
     return[...acc, ...bill]
