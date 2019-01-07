@@ -74,6 +74,7 @@ Bills.propTypes = {
   billArray: PropTypes.array.isRequired,
   isLoading: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string.isRequired,
+  favorites: PropTypes.array.isRequired
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Bills);

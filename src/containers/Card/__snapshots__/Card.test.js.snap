@@ -1,0 +1,1015 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Card Container should match the snapshot if summary is empty 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    addFavorite={[MockFunction]}
+    bill_uri="https://something"
+    favorites={
+      Array [
+        "hr-45123",
+        "hr-7653",
+      ]
+    }
+    id="hr-7654"
+    major_action="Bill became Law"
+    major_action_date="12.6.2016"
+    removeFavorite={[MockFunction]}
+    sponsor="Wonder Woman"
+    summary=""
+    title="A very long string"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="not-fav"
+          onClick={[Function]}
+        >
+          Save bill 
+          hr-7654
+           as Favorite
+        </button>,
+        <h4>
+          A very long string
+        </h4>,
+        <h5>
+          Sponsored by: 
+          Wonder Woman
+           
+        </h5>,
+        <h5>
+          Bill became Law
+        </h5>,
+        <h5>
+          Date of last Major Action: 
+          12.6.2016
+        </h5>,
+        <h5>
+          Summary: 
+        </h5>,
+        <p>
+          A summary of this bill is not currently available
+        </p>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Save bill ",
+            "hr-7654",
+            " as Favorite",
+          ],
+          "className": "not-fav",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Save bill ",
+          "hr-7654",
+          " as Favorite",
+        ],
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A very long string",
+        },
+        "ref": null,
+        "rendered": "A very long string",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Sponsored by: ",
+            "Wonder Woman",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Sponsored by: ",
+          "Wonder Woman",
+          " ",
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Bill became Law",
+        },
+        "ref": null,
+        "rendered": "Bill became Law",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Date of last Major Action: ",
+            "12.6.2016",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Date of last Major Action: ",
+          "12.6.2016",
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Summary: ",
+        },
+        "ref": null,
+        "rendered": "Summary: ",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A summary of this bill is not currently available",
+        },
+        "ref": null,
+        "rendered": "A summary of this bill is not currently available",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="not-fav"
+            onClick={[Function]}
+          >
+            Save bill 
+            hr-7654
+             as Favorite
+          </button>,
+          <h4>
+            A very long string
+          </h4>,
+          <h5>
+            Sponsored by: 
+            Wonder Woman
+             
+          </h5>,
+          <h5>
+            Bill became Law
+          </h5>,
+          <h5>
+            Date of last Major Action: 
+            12.6.2016
+          </h5>,
+          <h5>
+            Summary: 
+          </h5>,
+          <p>
+            A summary of this bill is not currently available
+          </p>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Save bill ",
+              "hr-7654",
+              " as Favorite",
+            ],
+            "className": "not-fav",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Save bill ",
+            "hr-7654",
+            " as Favorite",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A very long string",
+          },
+          "ref": null,
+          "rendered": "A very long string",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Sponsored by: ",
+              "Wonder Woman",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sponsored by: ",
+            "Wonder Woman",
+            " ",
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Bill became Law",
+          },
+          "ref": null,
+          "rendered": "Bill became Law",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Date of last Major Action: ",
+              "12.6.2016",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Date of last Major Action: ",
+            "12.6.2016",
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Summary: ",
+          },
+          "ref": null,
+          "rendered": "Summary: ",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A summary of this bill is not currently available",
+          },
+          "ref": null,
+          "rendered": "A summary of this bill is not currently available",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Card Card Container should match the snapshot if summary is provided and id is not in the favorites array 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    addFavorite={[MockFunction]}
+    bill_uri="https://something"
+    favorites={
+      Array [
+        "hr-45123",
+        "hr-7653",
+      ]
+    }
+    id="hr-7654"
+    major_action="Bill became Law"
+    major_action_date="12.6.2016"
+    removeFavorite={[MockFunction]}
+    sponsor="Wonder Woman"
+    summary="To begin my life with the beginning of my life I must record that I was born"
+    title="A very long string"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="not-fav"
+          onClick={[Function]}
+        >
+          Save bill 
+          hr-7654
+           as Favorite
+        </button>,
+        <h4>
+          A very long string
+        </h4>,
+        <h5>
+          Sponsored by: 
+          Wonder Woman
+           
+        </h5>,
+        <h5>
+          Bill became Law
+        </h5>,
+        <h5>
+          Date of last Major Action: 
+          12.6.2016
+        </h5>,
+        <h5>
+          Summary: 
+        </h5>,
+        <p>
+          To begin my life with the beginning of my life I must record that I was born
+        </p>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Save bill ",
+            "hr-7654",
+            " as Favorite",
+          ],
+          "className": "not-fav",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Save bill ",
+          "hr-7654",
+          " as Favorite",
+        ],
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A very long string",
+        },
+        "ref": null,
+        "rendered": "A very long string",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Sponsored by: ",
+            "Wonder Woman",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Sponsored by: ",
+          "Wonder Woman",
+          " ",
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Bill became Law",
+        },
+        "ref": null,
+        "rendered": "Bill became Law",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Date of last Major Action: ",
+            "12.6.2016",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Date of last Major Action: ",
+          "12.6.2016",
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Summary: ",
+        },
+        "ref": null,
+        "rendered": "Summary: ",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "To begin my life with the beginning of my life I must record that I was born",
+        },
+        "ref": null,
+        "rendered": "To begin my life with the beginning of my life I must record that I was born",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="not-fav"
+            onClick={[Function]}
+          >
+            Save bill 
+            hr-7654
+             as Favorite
+          </button>,
+          <h4>
+            A very long string
+          </h4>,
+          <h5>
+            Sponsored by: 
+            Wonder Woman
+             
+          </h5>,
+          <h5>
+            Bill became Law
+          </h5>,
+          <h5>
+            Date of last Major Action: 
+            12.6.2016
+          </h5>,
+          <h5>
+            Summary: 
+          </h5>,
+          <p>
+            To begin my life with the beginning of my life I must record that I was born
+          </p>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Save bill ",
+              "hr-7654",
+              " as Favorite",
+            ],
+            "className": "not-fav",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Save bill ",
+            "hr-7654",
+            " as Favorite",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A very long string",
+          },
+          "ref": null,
+          "rendered": "A very long string",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Sponsored by: ",
+              "Wonder Woman",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sponsored by: ",
+            "Wonder Woman",
+            " ",
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Bill became Law",
+          },
+          "ref": null,
+          "rendered": "Bill became Law",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Date of last Major Action: ",
+              "12.6.2016",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Date of last Major Action: ",
+            "12.6.2016",
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Summary: ",
+          },
+          "ref": null,
+          "rendered": "Summary: ",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "To begin my life with the beginning of my life I must record that I was born",
+          },
+          "ref": null,
+          "rendered": "To begin my life with the beginning of my life I must record that I was born",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Card Card Container should match the snapshot if the id is included in favorites array 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    addFavorite={[MockFunction]}
+    bill_uri="https://something"
+    favorites={
+      Array [
+        "hr-45123",
+        "hr-7653",
+      ]
+    }
+    id="hr-45123"
+    major_action="Bill became Law"
+    major_action_date="12.6.2016"
+    removeFavorite={[MockFunction]}
+    sponsor="Wonder Woman"
+    summary="To begin my life with the beginning of my life I must record that I was born"
+    title="A very long string"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="fav"
+          onClick={[Function]}
+        >
+          Remove bill 
+          hr-45123
+           from Favorites
+        </button>,
+        <h4>
+          A very long string
+        </h4>,
+        <h5>
+          Sponsored by: 
+          Wonder Woman
+           
+        </h5>,
+        <h5>
+          Bill became Law
+        </h5>,
+        <h5>
+          Date of last Major Action: 
+          12.6.2016
+        </h5>,
+        <h5>
+          Summary: 
+        </h5>,
+        <p>
+          To begin my life with the beginning of my life I must record that I was born
+        </p>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Remove bill ",
+            "hr-45123",
+            " from Favorites",
+          ],
+          "className": "fav",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Remove bill ",
+          "hr-45123",
+          " from Favorites",
+        ],
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A very long string",
+        },
+        "ref": null,
+        "rendered": "A very long string",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Sponsored by: ",
+            "Wonder Woman",
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Sponsored by: ",
+          "Wonder Woman",
+          " ",
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Bill became Law",
+        },
+        "ref": null,
+        "rendered": "Bill became Law",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Date of last Major Action: ",
+            "12.6.2016",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Date of last Major Action: ",
+          "12.6.2016",
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Summary: ",
+        },
+        "ref": null,
+        "rendered": "Summary: ",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "To begin my life with the beginning of my life I must record that I was born",
+        },
+        "ref": null,
+        "rendered": "To begin my life with the beginning of my life I must record that I was born",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="fav"
+            onClick={[Function]}
+          >
+            Remove bill 
+            hr-45123
+             from Favorites
+          </button>,
+          <h4>
+            A very long string
+          </h4>,
+          <h5>
+            Sponsored by: 
+            Wonder Woman
+             
+          </h5>,
+          <h5>
+            Bill became Law
+          </h5>,
+          <h5>
+            Date of last Major Action: 
+            12.6.2016
+          </h5>,
+          <h5>
+            Summary: 
+          </h5>,
+          <p>
+            To begin my life with the beginning of my life I must record that I was born
+          </p>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Remove bill ",
+              "hr-45123",
+              " from Favorites",
+            ],
+            "className": "fav",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Remove bill ",
+            "hr-45123",
+            " from Favorites",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A very long string",
+          },
+          "ref": null,
+          "rendered": "A very long string",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Sponsored by: ",
+              "Wonder Woman",
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sponsored by: ",
+            "Wonder Woman",
+            " ",
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Bill became Law",
+          },
+          "ref": null,
+          "rendered": "Bill became Law",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Date of last Major Action: ",
+              "12.6.2016",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Date of last Major Action: ",
+            "12.6.2016",
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Summary: ",
+          },
+          "ref": null,
+          "rendered": "Summary: ",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "To begin my life with the beginning of my life I must record that I was born",
+          },
+          "ref": null,
+          "rendered": "To begin my life with the beginning of my life I must record that I was born",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -1,14 +1,18 @@
 import { isLoading, hasErrored, addBills } from '../actions/index';
 import { cleanBillsData } from '../utils/cleaner';
+jest.mock('../utils/cleaner');
 import { fetchBillsThunk } from './fetchBillsThunk.js';
 
 describe('fetchBillsThunk', () => {
   let mockUrl
   let mockDispatch
+  let mockBills
 
   beforeEach(() => {
     mockUrl = 'https://api.propublica.org'
     mockDispatch = jest.fn()
+    mockBills = [{congress: 116, bills: [{name:'sara', somethingelse: 'xxx'}, {name:'David', somethingelse: 'xxx'}]}]
+    cleanBillsData.mockImplementation(() => mockBills)
   })
 
   it('calls dispatch with the isLoading action with true value prior to the fetch call', () => {
@@ -37,7 +41,7 @@ describe('fetchBillsThunk', () => {
     expect(mockDispatch).toHaveBeenCalledWith(isLoading(false))
   })
 
-  it.skip('should call cleanBillsData, if the response is ok', async () => {
+  it('should call cleanBillsData, if the response is ok', async () => {
     window.fetch = jest.fn().mockImplementation(() => 
       Promise.resolve({
         ok: true,
@@ -45,11 +49,12 @@ describe('fetchBillsThunk', () => {
           results: [{a:'b'}]
         }) 
       }))
-    let cleanBillsData = jest.fn()
-    expect(cleanBillsData).toHaveBeenCalled()
+    const thunk = fetchBillsThunk(mockUrl)
+    await thunk(mockDispatch)
+    expect(cleanBillsData.mock.calls.length).toEqual(1)
   })
 
-  it.skip('should dispatch addBills action', async () => {
+  it('should dispatch addBills action', async () => {
     window.fetch = jest.fn().mockImplementation(() => 
     Promise.resolve({
       ok: true,
@@ -57,11 +62,29 @@ describe('fetchBillsThunk', () => {
         results: [{a:'b'}]
       })
     }))
-    const mockBills = [{name:'sara'}]
     const thunk = fetchBillsThunk(mockUrl)
     await thunk(mockDispatch)
-    let cleanBillsData = jest.fn().mockImplementation(() => mockBills)
     expect(mockDispatch).toHaveBeenCalledWith(addBills(mockBills))
   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })
