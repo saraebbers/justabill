@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import { errorReducer } from './errorReducer';
-import { isLoadingReducer } from './isLoadingReducer';
-import { favoritesReducer } from './favoritesReducer';
-import { billsReducer } from './billsReducer';
+import { errorReducer } from './errorReducer/errorReducer';
+import { isLoadingReducer } from './isLoadingReducer/isLoadingReducer';
+import { favoritesReducer } from './favoritesReducer/favoritesReducer';
+import { billsReducer } from './billsReducer/billsReducer';
 
 export const rootReducer = combineReducers({
   bills: billsReducer,
