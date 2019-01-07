@@ -1,0 +1,628 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Favorites Favorites container should match the snapshot if there are favorites 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Favorites
+    billArray={
+      Array [
+        Object {
+          "bills": Array [
+            Object {
+              "id": "hr-123",
+              "name": "sara",
+              "somethingelse": "xxx",
+            },
+            Object {
+              "id": "hr234",
+              "name": "David",
+              "somethingelse": "xxx",
+            },
+          ],
+          "congress": 116,
+        },
+      ]
+    }
+    favoritesArray={
+      Array [
+        "hr-45123",
+        "hr-123",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <section
+        className="favorite-container"
+      >
+        <div
+          className="fav-msg"
+        >
+          <h3>
+            Below are your selected favorites.
+          </h3>
+        </div>
+        <div
+          className="cardContainer"
+        >
+          <withRouter(Connect(Card))
+            id="hr-123"
+            name="sara"
+            somethingelse="xxx"
+          />
+        </div>
+      </section>,
+      "className": "favorite-pg",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="fav-msg"
+          >
+            <h3>
+              Below are your selected favorites.
+            </h3>
+          </div>,
+          <div
+            className="cardContainer"
+          >
+            <withRouter(Connect(Card))
+              id="hr-123"
+              name="sara"
+              somethingelse="xxx"
+            />
+          </div>,
+        ],
+        "className": "favorite-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h3>
+              Below are your selected favorites.
+            </h3>,
+            "className": "fav-msg",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Below are your selected favorites.",
+            },
+            "ref": null,
+            "rendered": "Below are your selected favorites.",
+            "type": "h3",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <withRouter(Connect(Card))
+                id="hr-123"
+                name="sara"
+                somethingelse="xxx"
+              />,
+              undefined,
+            ],
+            "className": "cardContainer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "hr-123",
+              "nodeType": "function",
+              "props": Object {
+                "id": "hr-123",
+                "name": "sara",
+                "somethingelse": "xxx",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            undefined,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="favorite-container"
+        >
+          <div
+            className="fav-msg"
+          >
+            <h3>
+              Below are your selected favorites.
+            </h3>
+          </div>
+          <div
+            className="cardContainer"
+          >
+            <withRouter(Connect(Card))
+              id="hr-123"
+              name="sara"
+              somethingelse="xxx"
+            />
+          </div>
+        </section>,
+        "className": "favorite-pg",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="fav-msg"
+            >
+              <h3>
+                Below are your selected favorites.
+              </h3>
+            </div>,
+            <div
+              className="cardContainer"
+            >
+              <withRouter(Connect(Card))
+                id="hr-123"
+                name="sara"
+                somethingelse="xxx"
+              />
+            </div>,
+          ],
+          "className": "favorite-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h3>
+                Below are your selected favorites.
+              </h3>,
+              "className": "fav-msg",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Below are your selected favorites.",
+              },
+              "ref": null,
+              "rendered": "Below are your selected favorites.",
+              "type": "h3",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <withRouter(Connect(Card))
+                  id="hr-123"
+                  name="sara"
+                  somethingelse="xxx"
+                />,
+                undefined,
+              ],
+              "className": "cardContainer",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "hr-123",
+                "nodeType": "function",
+                "props": Object {
+                  "id": "hr-123",
+                  "name": "sara",
+                  "somethingelse": "xxx",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              undefined,
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Favorites Favorites container should match the snapshot if there are no favorites 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Favorites
+    billArray={
+      Array [
+        Object {
+          "bills": Array [
+            Object {
+              "id": "hr-123",
+              "name": "sara",
+              "somethingelse": "xxx",
+            },
+            Object {
+              "id": "hr234",
+              "name": "David",
+              "somethingelse": "xxx",
+            },
+          ],
+          "congress": 116,
+        },
+      ]
+    }
+    favoritesArray={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <section
+        className="favorite-container"
+      >
+        <div
+          className="fav-msg"
+        >
+          <h3>
+            Below are your selected favorites.
+          </h3>
+        </div>
+        <div
+          className="cardContainer"
+        >
+          <div
+            className="container"
+          >
+            <p
+              className="msg"
+            >
+              There are no selected favorites to display
+            </p>
+          </div>
+        </div>
+      </section>,
+      "className": "favorite-pg",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="fav-msg"
+          >
+            <h3>
+              Below are your selected favorites.
+            </h3>
+          </div>,
+          <div
+            className="cardContainer"
+          >
+            <div
+              className="container"
+            >
+              <p
+                className="msg"
+              >
+                There are no selected favorites to display
+              </p>
+            </div>
+          </div>,
+        ],
+        "className": "favorite-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h3>
+              Below are your selected favorites.
+            </h3>,
+            "className": "fav-msg",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Below are your selected favorites.",
+            },
+            "ref": null,
+            "rendered": "Below are your selected favorites.",
+            "type": "h3",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="container"
+            >
+              <p
+                className="msg"
+              >
+                There are no selected favorites to display
+              </p>
+            </div>,
+            "className": "cardContainer",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p
+                className="msg"
+              >
+                There are no selected favorites to display
+              </p>,
+              "className": "container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "There are no selected favorites to display",
+                "className": "msg",
+              },
+              "ref": null,
+              "rendered": "There are no selected favorites to display",
+              "type": "p",
+            },
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="favorite-container"
+        >
+          <div
+            className="fav-msg"
+          >
+            <h3>
+              Below are your selected favorites.
+            </h3>
+          </div>
+          <div
+            className="cardContainer"
+          >
+            <div
+              className="container"
+            >
+              <p
+                className="msg"
+              >
+                There are no selected favorites to display
+              </p>
+            </div>
+          </div>
+        </section>,
+        "className": "favorite-pg",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="fav-msg"
+            >
+              <h3>
+                Below are your selected favorites.
+              </h3>
+            </div>,
+            <div
+              className="cardContainer"
+            >
+              <div
+                className="container"
+              >
+                <p
+                  className="msg"
+                >
+                  There are no selected favorites to display
+                </p>
+              </div>
+            </div>,
+          ],
+          "className": "favorite-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h3>
+                Below are your selected favorites.
+              </h3>,
+              "className": "fav-msg",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Below are your selected favorites.",
+              },
+              "ref": null,
+              "rendered": "Below are your selected favorites.",
+              "type": "h3",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="container"
+              >
+                <p
+                  className="msg"
+                >
+                  There are no selected favorites to display
+                </p>
+              </div>,
+              "className": "cardContainer",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p
+                  className="msg"
+                >
+                  There are no selected favorites to display
+                </p>,
+                "className": "container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "There are no selected favorites to display",
+                  "className": "msg",
+                },
+                "ref": null,
+                "rendered": "There are no selected favorites to display",
+                "type": "p",
+              },
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
