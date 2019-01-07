@@ -21,8 +21,9 @@ const Display = (props) => {
 }
 
 Display.propTypes = {
-  Bills: PropTypes.object,
-  Favorites: PropTypes.object
+  type: PropTypes.string
 }
+
+// passing in an object with type of bills or favorites....what is the name of the object... fix propTypes
 
 export default Display;
