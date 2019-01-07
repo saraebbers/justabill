@@ -14,7 +14,7 @@ describe('Bills', () => {
   let mockLocalState
 
   beforeEach(() => {
-    mockBillArray=[{congress: 116, bills: [{id: 'hr123', name:'sara', somethingelse: 'xxx'}, {id: 'hr234', name:'David', somethingelse: 'xxx'}]}]
+    mockBillArray=[{congress: 115, bills: [{id: 'hr123', name:'sara', somethingelse: 'xxx'}, {id: 'hr234', name:'David', somethingelse: 'xxx'}]}]
     mockFavorites=['hr-45123', 'hr-7653']
     mockErrorMessage = ''
     mockFetchBillsThunk= jest.fn()

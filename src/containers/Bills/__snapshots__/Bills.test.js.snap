@@ -19,7 +19,7 @@ ShallowWrapper {
               "somethingelse": "xxx",
             },
           ],
-          "congress": 116,
+          "congress": 115,
         },
       ]
     }
@@ -72,7 +72,18 @@ ShallowWrapper {
         </div>
         <div
           className="cardContainer"
-        />
+        >
+          <withRouter(Connect(Card))
+            id="hr123"
+            name="sara"
+            somethingelse="xxx"
+          />
+          <withRouter(Connect(Card))
+            id="hr234"
+            name="David"
+            somethingelse="xxx"
+          />
+        </div>
       </section>,
       "className": "bills-pg",
     },
@@ -92,7 +103,18 @@ ShallowWrapper {
           </div>,
           <div
             className="cardContainer"
-          />,
+          >
+            <withRouter(Connect(Card))
+              id="hr123"
+              name="sara"
+              somethingelse="xxx"
+            />
+            <withRouter(Connect(Card))
+              id="hr234"
+              name="David"
+              somethingelse="xxx"
+            />
+          </div>,
         ],
         "className": "bill-container",
       },
@@ -127,11 +149,49 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              <withRouter(Connect(Card))
+                id="hr123"
+                name="sara"
+                somethingelse="xxx"
+              />,
+              <withRouter(Connect(Card))
+                id="hr234"
+                name="David"
+                somethingelse="xxx"
+              />,
+            ],
             "className": "cardContainer",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "hr123",
+              "nodeType": "function",
+              "props": Object {
+                "id": "hr123",
+                "name": "sara",
+                "somethingelse": "xxx",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "hr234",
+              "nodeType": "function",
+              "props": Object {
+                "id": "hr234",
+                "name": "David",
+                "somethingelse": "xxx",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": "div",
         },
       ],
@@ -157,7 +217,18 @@ ShallowWrapper {
           </div>
           <div
             className="cardContainer"
-          />
+          >
+            <withRouter(Connect(Card))
+              id="hr123"
+              name="sara"
+              somethingelse="xxx"
+            />
+            <withRouter(Connect(Card))
+              id="hr234"
+              name="David"
+              somethingelse="xxx"
+            />
+          </div>
         </section>,
         "className": "bills-pg",
       },
@@ -177,7 +248,18 @@ ShallowWrapper {
             </div>,
             <div
               className="cardContainer"
-            />,
+            >
+              <withRouter(Connect(Card))
+                id="hr123"
+                name="sara"
+                somethingelse="xxx"
+              />
+              <withRouter(Connect(Card))
+                id="hr234"
+                name="David"
+                somethingelse="xxx"
+              />
+            </div>,
           ],
           "className": "bill-container",
         },
@@ -212,11 +294,49 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                <withRouter(Connect(Card))
+                  id="hr123"
+                  name="sara"
+                  somethingelse="xxx"
+                />,
+                <withRouter(Connect(Card))
+                  id="hr234"
+                  name="David"
+                  somethingelse="xxx"
+                />,
+              ],
               "className": "cardContainer",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "hr123",
+                "nodeType": "function",
+                "props": Object {
+                  "id": "hr123",
+                  "name": "sara",
+                  "somethingelse": "xxx",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "hr234",
+                "nodeType": "function",
+                "props": Object {
+                  "id": "hr234",
+                  "name": "David",
+                  "somethingelse": "xxx",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": "div",
           },
         ],
@@ -264,7 +384,7 @@ ShallowWrapper {
               "somethingelse": "xxx",
             },
           ],
-          "congress": 116,
+          "congress": 115,
         },
       ]
     }
