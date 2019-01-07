@@ -14,23 +14,23 @@ describe('Bills', () => {
   let mockLocalState
 
   beforeEach(() => {
-    mockBillArray=[{congress: 116, bills: [{name:'sara', somethingelse: 'xxx'}, {name:'David', somethingelse: 'xxx'}]}]
+    mockBillArray=[{congress: 116, bills: [{id: 'hr123', name:'sara', somethingelse: 'xxx'}, {id: 'hr234', name:'David', somethingelse: 'xxx'}]}]
     mockFavorites=['hr-45123', 'hr-7653']
     mockErrorMessage = ''
     mockFetchBillsThunk= jest.fn()
     mockIsLoading=false;
-    mockLocalState = {congress: 116}
+    mockLocalState = {congress: 115}
   })
 
   describe('bills comtainer', () => {
 
-    it('should match the screenshot if is Loading is true', () => {
+    it('should match the snapshot if is Loading is true', () => {
       mockIsLoading = true
       const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should match the screenshot if is Loading is true', () => {
+    it('should match the snapshot if is Loading is false', () => {
       const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
       expect(wrapper).toMatchSnapshot()
     })
@@ -39,6 +39,12 @@ describe('Bills', () => {
        const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
        await wrapper.instance().componentDidMount()
        expect(mockFetchBillsThunk).toHaveBeenCalled()
+    })
+
+    it('should have the correct default local state', () => {
+      const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
+      const expected = mockLocalState
+      expect(wrapper.state()).toEqual(expected)
     })
   })
 
