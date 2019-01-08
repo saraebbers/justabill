@@ -128,7 +128,7 @@ ShallowWrapper {
                 name="sara"
                 somethingelse="xxx"
               />,
-              undefined,
+              null,
             ],
             "className": "cardContainer",
           },
@@ -147,7 +147,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            undefined,
+            null,
           ],
           "type": "div",
         },
@@ -247,7 +247,7 @@ ShallowWrapper {
                   name="sara"
                   somethingelse="xxx"
                 />,
-                undefined,
+                null,
               ],
               "className": "cardContainer",
             },
@@ -266,7 +266,7 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
-              undefined,
+              null,
             ],
             "type": "div",
           },

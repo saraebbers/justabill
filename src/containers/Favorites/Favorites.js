@@ -19,7 +19,8 @@ export const Favorites = (props) => {
             if(favoritesArray.includes(bill.id)) {
               return <Card {...bill} key={bill.id} />
             }
-            return information
+            return null
+            // return <div key={bill.id}></div>
           })
           return information
         })
