@@ -61,3 +61,27 @@
     font-size: .75rem;
   }
 }
+
+button {
+    justify-self: end;
+    padding: 10px;
+    background-color: #420C14;
+    border: solid #718F94 2px;
+    color: #DBCFB0;
+    border-radius: 20px;
+    outline: none;
+    margin: 10px;
+
+    &.active {
+      background-color: #718F94;
+      border: solid #420C14 2px;
+      outline: none;
+    }
+
+    &:hover {
+      background-color: #718F94;
+      border: solid #420C14 2px;
+      outline: none;
+    }
+
+  }

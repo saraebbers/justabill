@@ -7,6 +7,7 @@ import Loading from '../../components/Loading/Loading';
 import Card from '../Card/Card';
 
 
+
 export class Bills extends Component {
   constructor() {
     super ()
@@ -15,17 +16,11 @@ export class Bills extends Component {
     }
   }
   
-  // async componentDidMount() {
-  //   const url = `https://api.propublica.org/congress/v1/${this.state.congress}/both/bills/enacted.json`
-  //   await this.props.fetchBillsThunk(url)
-  // }
-
   searchAnotherCongress = async (congressNumber) => {
     await this.setState({congress: congressNumber})
     const url = `https://api.propublica.org/congress/v1/${this.state.congress}/both/bills/enacted.json`
     await this.props.fetchBillsThunk(url)
   }
-
 
   render() {
     const { billArray, isLoading } = this.props
