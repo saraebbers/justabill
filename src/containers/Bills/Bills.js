@@ -46,7 +46,7 @@ export class Bills extends Component {
     }
 
     return(
-      <div className='bills-pg'>
+      <div id='bills-pg'>
         <section className='bill-container'>
           <div className='bill-msg'>
             <h3 className='title'>
