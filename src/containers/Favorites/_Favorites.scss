@@ -1,12 +1,11 @@
 .favorite-pg {
-  // height: 100vh;
+  height: 100vh;
   background: url(./assets/congressFloor.jpg)
     top center;
   background-size: cover;
 }
 
 .favorite-container {
-
   justify-content: start;
   display: grid;
   grid-template-columns: 1fr;
