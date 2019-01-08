@@ -20,6 +20,12 @@ export class Bills extends Component {
     await this.props.fetchBillsThunk(url)
   }
 
+  searchAnotherCongress = async (congressNumber) => {
+    await this.setState({congress: congressNumber})
+    const url = `https://api.propublica.org/congress/v1/${this.state.congress}/both/bills/enacted.json`
+    await this.props.fetchBillsThunk(url)
+  }
+
 
   render() {
     const { billArray, isLoading } = this.props
@@ -33,10 +39,13 @@ export class Bills extends Component {
       information = (<Loading />)
     } else {
       billArray.filter(billItem => {
-        if(billItem.congress === this.state.congress) {
+        if(billItem.bills.length && billItem.congress === this.state.congress) {
           information = billItem.bills.map(bill => {
             return <Card {...bill} key={bill.id}/>
           })
+        } else {
+          information = <div className='no-Bills'><h4>The congress you selected has yet to pass a bill that has become law.</h4>
+          <p>Please select another Congress</p> </div>
         }
         return information
       })
@@ -49,6 +58,15 @@ export class Bills extends Component {
             <h3>
               { title }
             </h3>
+            <div>
+              <p>Search a different congress</p>
+            </div>
+            <div>
+              <button onClick={()=>this.searchAnotherCongress(113)}>113</button>
+              <button onClick={()=>this.searchAnotherCongress(114)}>114</button>
+              <button onClick={()=>this.searchAnotherCongress(115)}>115</button>
+              <button onClick={()=>this.searchAnotherCongress(116)}>116</button>
+            </div>
           </div>
           <div className='cardContainer'>
             { information }
