@@ -49,13 +49,11 @@ export class Bills extends Component {
       <div className='bills-pg'>
         <section className='bill-container'>
           <div className='bill-msg'>
-            <h3>
+            <h3 className='title'>
               { title }
             </h3>
-            <div>
-              <p>Search a different congress</p>
-            </div>
-            <div>
+            <h3>Search a different congress</h3>
+            <div className='btn-holder'>
               <button onClick={()=>this.searchAnotherCongress(113)}>113</button>
               <button onClick={()=>this.searchAnotherCongress(114)}>114</button>
               <button onClick={()=>this.searchAnotherCongress(115)}>115</button>
