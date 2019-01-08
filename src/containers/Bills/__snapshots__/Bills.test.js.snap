@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Bills bills comtainer should match the snapshot if is Loading is false 1`] = `
+exports[`Bills bills container should match the snapshot if is Loading is false 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Bills
@@ -365,7 +365,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Bills bills comtainer should match the snapshot if is Loading is true 1`] = `
+exports[`Bills bills container should match the snapshot if is Loading is true 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Bills

@@ -1,5 +1,4 @@
 export const cleanBillsData = (uncleanBillsData) => {
-  console.log(uncleanBillsData)
   let congress = uncleanBillsData[0].congress;
   let bills = uncleanBillsData.reduce((acc, data) => {
       let bill = data.bills.map(bill => {

@@ -22,10 +22,11 @@ describe('Bills', () => {
     mockLocalState = {congress: 115}
   })
 
-  describe('bills comtainer', () => {
+  describe('bills container', () => {
 
     it('should match the snapshot if is Loading is true', () => {
       mockIsLoading = true
+      let state = mockLocalState 
       const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
       expect(wrapper).toMatchSnapshot()
     })
