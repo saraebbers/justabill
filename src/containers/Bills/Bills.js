@@ -25,7 +25,7 @@ export class Bills extends Component {
     const { billArray, isLoading } = this.props
     const { congress } = this.state
 
-    const title = `Below are the bills that became law during the ${congress}th Congress.`;
+    const title = `Below are the 20 most recent bills that became law during the ${congress}th Congress.`;
 
     let information; 
 

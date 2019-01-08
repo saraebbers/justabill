@@ -36,9 +36,16 @@ describe('Bills', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should fetch bills with the current value of state when the component mounts', async () => {
+    it('SearchAnotherCongress should change state', async () => {
        const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
-       await wrapper.instance().componentDidMount()
+       await wrapper.instance().searchAnotherCongress(114)
+       const expected = {congress: 114}
+       expect(wrapper.state()).toEqual(expected)
+    })
+
+    it('SearchAnotherCongress should fetch bills with the current value of state', async () => {
+       const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
+       await wrapper.instance().searchAnotherCongress(115)
        expect(mockFetchBillsThunk).toHaveBeenCalled()
     })
 

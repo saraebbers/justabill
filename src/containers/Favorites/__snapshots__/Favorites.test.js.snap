@@ -123,12 +123,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <withRouter(Connect(Card))
-                id="hr-123"
-                name="sara"
-                somethingelse="xxx"
-              />,
-              null,
+              Array [
+                <withRouter(Connect(Card))
+                  id="hr-123"
+                  name="sara"
+                  somethingelse="xxx"
+                />,
+                null,
+              ],
             ],
             "className": "cardContainer",
           },
@@ -242,12 +244,14 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <withRouter(Connect(Card))
-                  id="hr-123"
-                  name="sara"
-                  somethingelse="xxx"
-                />,
-                null,
+                Array [
+                  <withRouter(Connect(Card))
+                    id="hr-123"
+                    name="sara"
+                    somethingelse="xxx"
+                  />,
+                  null,
+                ],
               ],
               "className": "cardContainer",
             },
