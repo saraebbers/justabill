@@ -10,9 +10,7 @@ Create a directory for the project and cd into it.
 
 Clone down the repo for this project:
 
-``` git clone git@github.com:saraebbers/Movie-Tracker.git```
-
-cd into the backend directory
+``` git clone git@github.com:saraebbers/justabill.git```
 
 ```npm install```
 
@@ -40,7 +38,8 @@ export const apiKey = //Your key here//
 
 ## Design and Comps (Wire-frame, Application Screen shots)
 ### Wire-frame Images
-
+<img width="542" alt="screen shot 2019-01-07 at 6 30 08 pm" src="https://user-images.githubusercontent.com/39168394/50804266-764cdd80-12aa-11e9-978d-d12731ac4fcc.png">
+<img width="538" alt="screen shot 2019-01-07 at 6 30 26 pm" src="https://user-images.githubusercontent.com/39168394/50804271-7a78fb00-12aa-11e9-980b-434d48e47563.png">
 
 ### Final App Images
 
