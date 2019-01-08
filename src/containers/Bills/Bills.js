@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import '../../index.scss';
 import PropTypes from 'prop-types';
 import { fetchBillsThunk } from '../../thunks/fetchBillsThunk';
-import Loading from '../Loading/Loading';
+import Loading from '../../components/Loading/Loading';
 import Card from '../Card/Card';
 
 

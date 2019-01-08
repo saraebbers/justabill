@@ -9,7 +9,7 @@ export const cleanBillsData = (uncleanBillsData) => {
           major_action: bill.latest_major_action,
           major_action_date: bill.latest_major_action_date,
           summary: bill.summary,
-          bill_uri: bill.bill_uri // this is how you get to the whole bill
+          bill_uri: bill.bill_uri 
         })
       })
     return[...acc, ...bill]

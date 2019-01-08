@@ -11,7 +11,6 @@ export class Card extends Component {
   handleAddFavorite = () => {
     const { id, addFavorite } = this.props
     addFavorite(id)
-
   }
 
   handleRemoveFavorite = () => {
