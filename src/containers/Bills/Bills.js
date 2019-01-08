@@ -7,7 +7,6 @@ import Loading from '../../components/Loading/Loading';
 import Card from '../Card/Card';
 
 
-
 export class Bills extends Component {
   constructor() {
     super ()
