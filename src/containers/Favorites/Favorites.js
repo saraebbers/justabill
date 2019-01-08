@@ -20,7 +20,6 @@ export const Favorites = (props) => {
               return <Card {...bill} key={bill.id} />
             }
             return null
-            // return <div key={bill.id}></div>
           })
           return information
         })
