@@ -14,7 +14,6 @@ describe('cleanBillsData', () => {
         latest_major_action: "Became Public Law No: 115-336.",
         latest_major_action_date: '2018-12-24',
         summary: '',
-        bill_uri: 'http://something'
       },{
         bill_id: "hr-123-115", 
         bill_slug: 'hr123',
@@ -24,7 +23,6 @@ describe('cleanBillsData', () => {
         latest_major_action: "Became Public Law No: 116-7.",
         latest_major_action_date: '2018-1-24',
         summary: 'Something',
-        bill_uri: 'http://something/else'
       } ]
     }]
 
@@ -35,7 +33,6 @@ describe('cleanBillsData', () => {
         major_action: "Became Public Law No: 115-336.",
         major_action_date: '2018-12-24',
         summary: '',
-        bill_uri: 'http://something'
       },{
         id: "hr-123-115", 
         title: 'a less than great title',
@@ -43,7 +40,6 @@ describe('cleanBillsData', () => {
         major_action: "Became Public Law No: 116-7.",
         major_action_date: '2018-1-24',
         summary: 'Something',
-        bill_uri: 'http://something/else'
       } ]}
 
       let result = cleanBillsData(mockUncleanBillsData)
