@@ -36,6 +36,8 @@ describe('Bills', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
+    // it('')
+
     it('SearchAnotherCongress should change state', async () => {
        const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
        await wrapper.instance().searchAnotherCongress(114)

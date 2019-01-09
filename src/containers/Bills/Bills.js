@@ -54,10 +54,10 @@ export class Bills extends Component {
             </h3>
             <h3>Search a different congress</h3>
             <div className='btn-holder'>
-              <button onClick={()=>this.searchAnotherCongress(113)}>113</button>
-              <button onClick={()=>this.searchAnotherCongress(114)}>114</button>
-              <button onClick={()=>this.searchAnotherCongress(115)}>115</button>
-              <button onClick={()=>this.searchAnotherCongress(116)}>116</button>
+              <button className='113' onClick={()=>this.searchAnotherCongress(113)}>113</button>
+              <button className='114' onClick={()=>this.searchAnotherCongress(114)}>114</button>
+              <button className='115' onClick={()=>this.searchAnotherCongress(115)}>115</button>
+              <button className='116' onClick={()=>this.searchAnotherCongress(116)}>116</button>
             </div>
           </div>
           <div className='cardContainer'>
