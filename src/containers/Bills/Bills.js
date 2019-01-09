@@ -34,7 +34,7 @@ export class Bills extends Component {
 
     if(errorMessage.length) {
       information = (<ErrorMes message={this.props.errorMessage}/>)
-    }else if(isLoading === true) {
+    } else if(isLoading === true) {
       information = (<Loading />)
     } else {
       billArray.filter(billItem => {

@@ -31,7 +31,13 @@ describe('Bills', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should match the snapshot if is Loading is false', () => {
+    it('should match the snapshot if isLoading is false', () => {
+      const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should match the snapshot if there is an ErrorMessage', () => {
+      mockErrorMessage = 'this is an error message'
       const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
       expect(wrapper).toMatchSnapshot()
     })
