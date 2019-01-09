@@ -20,7 +20,7 @@ export class Card extends Component {
 
 
   render() { 
-    let { id, title, sponsor, major_action, major_action_date, summary, bill_uri, favorites } = this.props
+    let { id, title, sponsor, major_action, major_action_date, summary, favorites } = this.props
     let button
     
     if(summary === '') {
@@ -71,7 +71,6 @@ Card.propTypes = {
   major_action: PropTypes.string.isRequired,
   major_action_date: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
-  bill_uri: PropTypes.string.isRequired,
   addFavorite: PropTypes.func.isRequired,
   removeFavorite: PropTypes.func.isRequired,
 }
