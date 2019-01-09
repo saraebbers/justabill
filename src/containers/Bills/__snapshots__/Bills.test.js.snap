@@ -30,21 +30,7 @@ ShallowWrapper {
         "hr-7653",
       ]
     }
-    fetchBillsThunk={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "https://api.propublica.org/congress/v1/115/both/bills/enacted.json",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
+    fetchBillsThunk={[MockFunction]}
     isLoading={false}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -66,9 +52,42 @@ ShallowWrapper {
         <div
           className="bill-msg"
         >
-          <h3>
-            Below are the bills that became law during the 115th Congress.
+          <h3
+            className="title"
+          >
+            Below are the 20 most recent bills that became law during the 115th Congress.
           </h3>
+          <h3>
+            Search a different congress
+          </h3>
+          <div
+            className="btn-holder"
+          >
+            <button
+              className="113"
+              onClick={[Function]}
+            >
+              113
+            </button>
+            <button
+              className="114"
+              onClick={[Function]}
+            >
+              114
+            </button>
+            <button
+              className="115"
+              onClick={[Function]}
+            >
+              115
+            </button>
+            <button
+              className="116"
+              onClick={[Function]}
+            >
+              116
+            </button>
+          </div>
         </div>
         <div
           className="cardContainer"
@@ -85,7 +104,7 @@ ShallowWrapper {
           />
         </div>
       </section>,
-      "className": "bills-pg",
+      "id": "bills-pg",
     },
     "ref": null,
     "rendered": Object {
@@ -97,9 +116,42 @@ ShallowWrapper {
           <div
             className="bill-msg"
           >
-            <h3>
-              Below are the bills that became law during the 115th Congress.
+            <h3
+              className="title"
+            >
+              Below are the 20 most recent bills that became law during the 115th Congress.
             </h3>
+            <h3>
+              Search a different congress
+            </h3>
+            <div
+              className="btn-holder"
+            >
+              <button
+                className="113"
+                onClick={[Function]}
+              >
+                113
+              </button>
+              <button
+                className="114"
+                onClick={[Function]}
+              >
+                114
+              </button>
+              <button
+                className="115"
+                onClick={[Function]}
+              >
+                115
+              </button>
+              <button
+                className="116"
+                onClick={[Function]}
+              >
+                116
+              </button>
+            </div>
           </div>,
           <div
             className="cardContainer"
@@ -125,23 +177,162 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h3>
-              Below are the bills that became law during the 115th Congress.
-            </h3>,
+            "children": Array [
+              <h3
+                className="title"
+              >
+                Below are the 20 most recent bills that became law during the 115th Congress.
+              </h3>,
+              <h3>
+                Search a different congress
+              </h3>,
+              <div
+                className="btn-holder"
+              >
+                <button
+                  className="113"
+                  onClick={[Function]}
+                >
+                  113
+                </button>
+                <button
+                  className="114"
+                  onClick={[Function]}
+                >
+                  114
+                </button>
+                <button
+                  className="115"
+                  onClick={[Function]}
+                >
+                  115
+                </button>
+                <button
+                  className="116"
+                  onClick={[Function]}
+                >
+                  116
+                </button>
+              </div>,
+            ],
             "className": "bill-msg",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Below are the bills that became law during the 115th Congress.",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Below are the 20 most recent bills that became law during the 115th Congress.",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Below are the 20 most recent bills that became law during the 115th Congress.",
+              "type": "h3",
             },
-            "ref": null,
-            "rendered": "Below are the bills that became law during the 115th Congress.",
-            "type": "h3",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Search a different congress",
+              },
+              "ref": null,
+              "rendered": "Search a different congress",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="113"
+                    onClick={[Function]}
+                  >
+                    113
+                  </button>,
+                  <button
+                    className="114"
+                    onClick={[Function]}
+                  >
+                    114
+                  </button>,
+                  <button
+                    className="115"
+                    onClick={[Function]}
+                  >
+                    115
+                  </button>,
+                  <button
+                    className="116"
+                    onClick={[Function]}
+                  >
+                    116
+                  </button>,
+                ],
+                "className": "btn-holder",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "113",
+                    "className": "113",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "113",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "114",
+                    "className": "114",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "114",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "115",
+                    "className": "115",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "115",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "116",
+                    "className": "116",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "116",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
         Object {
@@ -211,9 +402,42 @@ ShallowWrapper {
           <div
             className="bill-msg"
           >
-            <h3>
-              Below are the bills that became law during the 115th Congress.
+            <h3
+              className="title"
+            >
+              Below are the 20 most recent bills that became law during the 115th Congress.
             </h3>
+            <h3>
+              Search a different congress
+            </h3>
+            <div
+              className="btn-holder"
+            >
+              <button
+                className="113"
+                onClick={[Function]}
+              >
+                113
+              </button>
+              <button
+                className="114"
+                onClick={[Function]}
+              >
+                114
+              </button>
+              <button
+                className="115"
+                onClick={[Function]}
+              >
+                115
+              </button>
+              <button
+                className="116"
+                onClick={[Function]}
+              >
+                116
+              </button>
+            </div>
           </div>
           <div
             className="cardContainer"
@@ -230,7 +454,7 @@ ShallowWrapper {
             />
           </div>
         </section>,
-        "className": "bills-pg",
+        "id": "bills-pg",
       },
       "ref": null,
       "rendered": Object {
@@ -242,9 +466,42 @@ ShallowWrapper {
             <div
               className="bill-msg"
             >
-              <h3>
-                Below are the bills that became law during the 115th Congress.
+              <h3
+                className="title"
+              >
+                Below are the 20 most recent bills that became law during the 115th Congress.
               </h3>
+              <h3>
+                Search a different congress
+              </h3>
+              <div
+                className="btn-holder"
+              >
+                <button
+                  className="113"
+                  onClick={[Function]}
+                >
+                  113
+                </button>
+                <button
+                  className="114"
+                  onClick={[Function]}
+                >
+                  114
+                </button>
+                <button
+                  className="115"
+                  onClick={[Function]}
+                >
+                  115
+                </button>
+                <button
+                  className="116"
+                  onClick={[Function]}
+                >
+                  116
+                </button>
+              </div>
             </div>,
             <div
               className="cardContainer"
@@ -270,23 +527,162 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h3>
-                Below are the bills that became law during the 115th Congress.
-              </h3>,
+              "children": Array [
+                <h3
+                  className="title"
+                >
+                  Below are the 20 most recent bills that became law during the 115th Congress.
+                </h3>,
+                <h3>
+                  Search a different congress
+                </h3>,
+                <div
+                  className="btn-holder"
+                >
+                  <button
+                    className="113"
+                    onClick={[Function]}
+                  >
+                    113
+                  </button>
+                  <button
+                    className="114"
+                    onClick={[Function]}
+                  >
+                    114
+                  </button>
+                  <button
+                    className="115"
+                    onClick={[Function]}
+                  >
+                    115
+                  </button>
+                  <button
+                    className="116"
+                    onClick={[Function]}
+                  >
+                    116
+                  </button>
+                </div>,
+              ],
               "className": "bill-msg",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Below are the bills that became law during the 115th Congress.",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Below are the 20 most recent bills that became law during the 115th Congress.",
+                  "className": "title",
+                },
+                "ref": null,
+                "rendered": "Below are the 20 most recent bills that became law during the 115th Congress.",
+                "type": "h3",
               },
-              "ref": null,
-              "rendered": "Below are the bills that became law during the 115th Congress.",
-              "type": "h3",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Search a different congress",
+                },
+                "ref": null,
+                "rendered": "Search a different congress",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      className="113"
+                      onClick={[Function]}
+                    >
+                      113
+                    </button>,
+                    <button
+                      className="114"
+                      onClick={[Function]}
+                    >
+                      114
+                    </button>,
+                    <button
+                      className="115"
+                      onClick={[Function]}
+                    >
+                      115
+                    </button>,
+                    <button
+                      className="116"
+                      onClick={[Function]}
+                    >
+                      116
+                    </button>,
+                  ],
+                  "className": "btn-holder",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "113",
+                      "className": "113",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "113",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "114",
+                      "className": "114",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "114",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "115",
+                      "className": "115",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "115",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "116",
+                      "className": "116",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "116",
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
             "type": "div",
           },
           Object {
@@ -395,21 +791,7 @@ ShallowWrapper {
         "hr-7653",
       ]
     }
-    fetchBillsThunk={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "https://api.propublica.org/congress/v1/115/both/bills/enacted.json",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
+    fetchBillsThunk={[MockFunction]}
     isLoading={true}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -431,9 +813,42 @@ ShallowWrapper {
         <div
           className="bill-msg"
         >
-          <h3>
-            Below are the bills that became law during the 115th Congress.
+          <h3
+            className="title"
+          >
+            Below are the 20 most recent bills that became law during the 115th Congress.
           </h3>
+          <h3>
+            Search a different congress
+          </h3>
+          <div
+            className="btn-holder"
+          >
+            <button
+              className="113"
+              onClick={[Function]}
+            >
+              113
+            </button>
+            <button
+              className="114"
+              onClick={[Function]}
+            >
+              114
+            </button>
+            <button
+              className="115"
+              onClick={[Function]}
+            >
+              115
+            </button>
+            <button
+              className="116"
+              onClick={[Function]}
+            >
+              116
+            </button>
+          </div>
         </div>
         <div
           className="cardContainer"
@@ -441,7 +856,7 @@ ShallowWrapper {
           <Loading />
         </div>
       </section>,
-      "className": "bills-pg",
+      "id": "bills-pg",
     },
     "ref": null,
     "rendered": Object {
@@ -453,9 +868,42 @@ ShallowWrapper {
           <div
             className="bill-msg"
           >
-            <h3>
-              Below are the bills that became law during the 115th Congress.
+            <h3
+              className="title"
+            >
+              Below are the 20 most recent bills that became law during the 115th Congress.
             </h3>
+            <h3>
+              Search a different congress
+            </h3>
+            <div
+              className="btn-holder"
+            >
+              <button
+                className="113"
+                onClick={[Function]}
+              >
+                113
+              </button>
+              <button
+                className="114"
+                onClick={[Function]}
+              >
+                114
+              </button>
+              <button
+                className="115"
+                onClick={[Function]}
+              >
+                115
+              </button>
+              <button
+                className="116"
+                onClick={[Function]}
+              >
+                116
+              </button>
+            </div>
           </div>,
           <div
             className="cardContainer"
@@ -472,23 +920,162 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h3>
-              Below are the bills that became law during the 115th Congress.
-            </h3>,
+            "children": Array [
+              <h3
+                className="title"
+              >
+                Below are the 20 most recent bills that became law during the 115th Congress.
+              </h3>,
+              <h3>
+                Search a different congress
+              </h3>,
+              <div
+                className="btn-holder"
+              >
+                <button
+                  className="113"
+                  onClick={[Function]}
+                >
+                  113
+                </button>
+                <button
+                  className="114"
+                  onClick={[Function]}
+                >
+                  114
+                </button>
+                <button
+                  className="115"
+                  onClick={[Function]}
+                >
+                  115
+                </button>
+                <button
+                  className="116"
+                  onClick={[Function]}
+                >
+                  116
+                </button>
+              </div>,
+            ],
             "className": "bill-msg",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Below are the bills that became law during the 115th Congress.",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Below are the 20 most recent bills that became law during the 115th Congress.",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Below are the 20 most recent bills that became law during the 115th Congress.",
+              "type": "h3",
             },
-            "ref": null,
-            "rendered": "Below are the bills that became law during the 115th Congress.",
-            "type": "h3",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Search a different congress",
+              },
+              "ref": null,
+              "rendered": "Search a different congress",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="113"
+                    onClick={[Function]}
+                  >
+                    113
+                  </button>,
+                  <button
+                    className="114"
+                    onClick={[Function]}
+                  >
+                    114
+                  </button>,
+                  <button
+                    className="115"
+                    onClick={[Function]}
+                  >
+                    115
+                  </button>,
+                  <button
+                    className="116"
+                    onClick={[Function]}
+                  >
+                    116
+                  </button>,
+                ],
+                "className": "btn-holder",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "113",
+                    "className": "113",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "113",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "114",
+                    "className": "114",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "114",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "115",
+                    "className": "115",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "115",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "116",
+                    "className": "116",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "116",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
         Object {
@@ -528,9 +1115,42 @@ ShallowWrapper {
           <div
             className="bill-msg"
           >
-            <h3>
-              Below are the bills that became law during the 115th Congress.
+            <h3
+              className="title"
+            >
+              Below are the 20 most recent bills that became law during the 115th Congress.
             </h3>
+            <h3>
+              Search a different congress
+            </h3>
+            <div
+              className="btn-holder"
+            >
+              <button
+                className="113"
+                onClick={[Function]}
+              >
+                113
+              </button>
+              <button
+                className="114"
+                onClick={[Function]}
+              >
+                114
+              </button>
+              <button
+                className="115"
+                onClick={[Function]}
+              >
+                115
+              </button>
+              <button
+                className="116"
+                onClick={[Function]}
+              >
+                116
+              </button>
+            </div>
           </div>
           <div
             className="cardContainer"
@@ -538,7 +1158,7 @@ ShallowWrapper {
             <Loading />
           </div>
         </section>,
-        "className": "bills-pg",
+        "id": "bills-pg",
       },
       "ref": null,
       "rendered": Object {
@@ -550,9 +1170,42 @@ ShallowWrapper {
             <div
               className="bill-msg"
             >
-              <h3>
-                Below are the bills that became law during the 115th Congress.
+              <h3
+                className="title"
+              >
+                Below are the 20 most recent bills that became law during the 115th Congress.
               </h3>
+              <h3>
+                Search a different congress
+              </h3>
+              <div
+                className="btn-holder"
+              >
+                <button
+                  className="113"
+                  onClick={[Function]}
+                >
+                  113
+                </button>
+                <button
+                  className="114"
+                  onClick={[Function]}
+                >
+                  114
+                </button>
+                <button
+                  className="115"
+                  onClick={[Function]}
+                >
+                  115
+                </button>
+                <button
+                  className="116"
+                  onClick={[Function]}
+                >
+                  116
+                </button>
+              </div>
             </div>,
             <div
               className="cardContainer"
@@ -569,23 +1222,162 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h3>
-                Below are the bills that became law during the 115th Congress.
-              </h3>,
+              "children": Array [
+                <h3
+                  className="title"
+                >
+                  Below are the 20 most recent bills that became law during the 115th Congress.
+                </h3>,
+                <h3>
+                  Search a different congress
+                </h3>,
+                <div
+                  className="btn-holder"
+                >
+                  <button
+                    className="113"
+                    onClick={[Function]}
+                  >
+                    113
+                  </button>
+                  <button
+                    className="114"
+                    onClick={[Function]}
+                  >
+                    114
+                  </button>
+                  <button
+                    className="115"
+                    onClick={[Function]}
+                  >
+                    115
+                  </button>
+                  <button
+                    className="116"
+                    onClick={[Function]}
+                  >
+                    116
+                  </button>
+                </div>,
+              ],
               "className": "bill-msg",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Below are the bills that became law during the 115th Congress.",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Below are the 20 most recent bills that became law during the 115th Congress.",
+                  "className": "title",
+                },
+                "ref": null,
+                "rendered": "Below are the 20 most recent bills that became law during the 115th Congress.",
+                "type": "h3",
               },
-              "ref": null,
-              "rendered": "Below are the bills that became law during the 115th Congress.",
-              "type": "h3",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Search a different congress",
+                },
+                "ref": null,
+                "rendered": "Search a different congress",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      className="113"
+                      onClick={[Function]}
+                    >
+                      113
+                    </button>,
+                    <button
+                      className="114"
+                      onClick={[Function]}
+                    >
+                      114
+                    </button>,
+                    <button
+                      className="115"
+                      onClick={[Function]}
+                    >
+                      115
+                    </button>,
+                    <button
+                      className="116"
+                      onClick={[Function]}
+                    >
+                      116
+                    </button>,
+                  ],
+                  "className": "btn-holder",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "113",
+                      "className": "113",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "113",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "114",
+                      "className": "114",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "114",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "115",
+                      "className": "115",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "115",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "116",
+                      "className": "116",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "116",
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
             "type": "div",
           },
           Object {

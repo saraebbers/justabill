@@ -7,12 +7,6 @@
   margin: 10px;
   padding: 10px;
 }
-.bills-pg {
-    // height: 100vh;
-  background: url(./assets/congressFloor.jpg)
-    top center;
-  background-size: cover;
-}
 
 .bill-msg {
   border: solid #718F94 5px;
@@ -21,11 +15,25 @@
   padding: 10px;
   width: 90%;
   color: #151E3F;
+  justify-content: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 
-  h3 {
+  .title {
     text-align: center;
     font-size: 1.5rem;
     padding: 10px;
+    color: #151E3F;
+
+  }
+
+  h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 10px;
+  color: #420C14;
+
   }
 }
 
@@ -36,3 +44,45 @@
   justify-items: center;
   margin: 0;
 }
+
+.no-Bills {
+  display: grid;
+  background-color: #DBCFB0;
+  padding-top: 15px;
+  border: solid #718F94 4px;
+  color: #420C14;
+  height: 150px;
+  align-items: start;
+  justify-items: center;
+
+  h4 {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #151E3F;
+    padding: 5px;
+  }
+
+  p {
+    margin-left: 10px;
+    font-size: .75rem;
+  }
+}
+
+button {
+    justify-self: end;
+    padding: 10px;
+    background-color: #420C14;
+    border: solid #718F94 2px;
+    color: #DBCFB0;
+    border-radius: 20px;
+    outline: none;
+    margin: 10px;
+
+    &:hover {
+      background-color: #718F94;
+      border: solid #420C14 2px;
+      outline: none;
+    }
+
+  }

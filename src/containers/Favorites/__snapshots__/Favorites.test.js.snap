@@ -123,12 +123,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <withRouter(Connect(Card))
-                id="hr-123"
-                name="sara"
-                somethingelse="xxx"
-              />,
-              undefined,
+              Array [
+                <withRouter(Connect(Card))
+                  id="hr-123"
+                  name="sara"
+                  somethingelse="xxx"
+                />,
+                null,
+              ],
             ],
             "className": "cardContainer",
           },
@@ -147,7 +149,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            undefined,
+            null,
           ],
           "type": "div",
         },
@@ -242,12 +244,14 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <withRouter(Connect(Card))
-                  id="hr-123"
-                  name="sara"
-                  somethingelse="xxx"
-                />,
-                undefined,
+                Array [
+                  <withRouter(Connect(Card))
+                    id="hr-123"
+                    name="sara"
+                    somethingelse="xxx"
+                  />,
+                  null,
+                ],
               ],
               "className": "cardContainer",
             },
@@ -266,7 +270,7 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
-              undefined,
+              null,
             ],
             "type": "div",
           },

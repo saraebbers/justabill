@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import { errorReducer } from './errorReducer/errorReducer';
 import { isLoadingReducer } from './isLoadingReducer/isLoadingReducer';
 import { favoritesReducer } from './favoritesReducer/favoritesReducer';

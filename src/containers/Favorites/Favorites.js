@@ -14,15 +14,15 @@ export const Favorites = (props) => {
   if(!favoritesArray.length) {
     information = <div className='container'><p className='msg'>There are no selected favorites to display</p></div>
   } else {
-    billArray.map(billItem => {
-          information = billItem.bills.map(bill => { 
-            if(favoritesArray.includes(bill.id)) {
-              return <Card {...bill} key={bill.id} />
-            }
-            return information
-          })
-          return information
-        })
+    information = billArray.map(billItem => {
+      return billItem.bills.map(bill => { 
+        if(favoritesArray.includes(bill.id)) {
+          return <Card {...bill} key={bill.id} />
+        } else {
+          return null
+        }
+      })
+    })
   }
 
   return(

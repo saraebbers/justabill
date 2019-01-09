@@ -3,7 +3,23 @@
 exports[`App Container should match the screenshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <App
+    fetchBillsThunk={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "https://api.propublica.org/congress/v1/115/both/bills/enacted.json",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

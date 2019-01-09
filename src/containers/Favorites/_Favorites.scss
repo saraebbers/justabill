@@ -1,12 +1,4 @@
-.favorite-pg {
-    height: 100vh;
-  background: url(./assets/congressFloor.jpg)
-    top center;
-  background-size: cover;
-}
-
 .favorite-container {
-
   justify-content: start;
   display: grid;
   grid-template-columns: 1fr;
@@ -37,6 +29,7 @@
   padding: 10px;
   color: #151E3F;
 
+
   .msg {
     text-align: center;
     font-size: 1rem;
@@ -45,6 +38,7 @@
 }
 
 .cardContainer {
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   grid-column-gap: 10px;
