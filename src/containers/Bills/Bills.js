@@ -4,6 +4,8 @@ import '../../index.scss';
 import PropTypes from 'prop-types';
 import { fetchBillsThunk } from '../../thunks/fetchBillsThunk';
 import Loading from '../../components/Loading/Loading';
+import ErrorMes from '../../components/ErrorMes/ErrorMes';
+
 import Card from '../Card/Card';
 
 
@@ -23,14 +25,16 @@ export class Bills extends Component {
   }
 
   render() {
-    const { billArray, isLoading } = this.props
+    const { billArray, isLoading, errorMessage } = this.props
     const { congress } = this.state
 
     const title = `Below are the 20 most recent bills that became law during the ${congress}th Congress.`;
 
     let information; 
 
-    if(isLoading === true) {
+    if(errorMessage.length) {
+      information = (<ErrorMes message={this.props.errorMessage}/>)
+    }else if(isLoading === true) {
       information = (<Loading />)
     } else {
       billArray.filter(billItem => {
