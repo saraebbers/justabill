@@ -3,7 +3,6 @@ import { Route, Switch, Link, NavLink } from 'react-router-dom';
 import '../../index.scss';
 import Welcome from '../../components/Welcome/Welcome';
 import Display from '../../components/Display/Display';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchBillsThunk } from '../../thunks/fetchBillsThunk';
 import { withRouter } from 'react-router';
@@ -49,20 +48,8 @@ export class App extends Component {
   }
 }
 
-export const mapStateToProps = (state) => ({
-  billArray: state.bills,
-  isLoading: state.isLoading,
-  errorMessage: state.errorMessage,
-})
-
 export const mapDispatchToProps = (dispatch) => ({
   fetchBillsThunk: (url) => dispatch(fetchBillsThunk(url)),
 })
 
-App.propTypes = {
-  billArray: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool.isRequired,
-  errorMessage: PropTypes.string.isRequired,
-}
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(connect(null, mapDispatchToProps)(App));
