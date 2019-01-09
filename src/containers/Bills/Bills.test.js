@@ -36,14 +36,18 @@ describe('Bills', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    // it('')
-
-    it('SearchAnotherCongress should change state', async () => {
-       const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
-       await wrapper.instance().searchAnotherCongress(114)
-       const expected = {congress: 114}
-       expect(wrapper.state()).toEqual(expected)
-    })
+    it('should call searchAnotherCongress when a button is clicked', () => {
+      const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
+      expect(wrapper.state('congress')).toBe(115)
+      wrapper.find('.congress-113').simulate('click')
+      expect(wrapper.state('congress')).toBe(113)
+      wrapper.find('.congress-114').simulate('click')
+      expect(wrapper.state('congress')).toBe(114) 
+      wrapper.find('.congress-116').simulate('click')
+      expect(wrapper.state('congress')).toBe(116)
+      wrapper.find('.congress-115').simulate('click')
+      expect(wrapper.state('congress')).toBe(115)
+    })  
 
     it('SearchAnotherCongress should fetch bills with the current value of state', async () => {
        const wrapper = shallow(<Bills isLoading={mockIsLoading} billArray={mockBillArray} errorMessage={mockErrorMessage} favorites={mockFavorites} fetchBillsThunk={mockFetchBillsThunk} />)
